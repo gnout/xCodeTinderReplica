@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		860306DA26AEA9CB00F4FB0B /* PurchasePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860306D926AEA9CB00F4FB0B /* PurchasePopup.swift */; };
 		861A519426A987E000B4C6C5 /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861A519326A987E000B4C6C5 /* MessageListView.swift */; };
 		861A519626A98A9200B4C6C5 /* MessageListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861A519526A98A9100B4C6C5 /* MessageListVM.swift */; };
 		861A519826A9AB9600B4C6C5 /* MessageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861A519726A9AB9600B4C6C5 /* MessageRowView.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		860306D926AEA9CB00F4FB0B /* PurchasePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasePopup.swift; sourceTree = "<group>"; };
 		861A519326A987E000B4C6C5 /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListView.swift; sourceTree = "<group>"; };
 		861A519526A98A9100B4C6C5 /* MessageListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListVM.swift; sourceTree = "<group>"; };
 		861A519726A9AB9600B4C6C5 /* MessageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRowView.swift; sourceTree = "<group>"; };
@@ -81,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		860306DB26AEA9E500F4FB0B /* Popups */ = {
+			isa = PBXGroup;
+			children = (
+				860306D926AEA9CB00F4FB0B /* PurchasePopup.swift */,
+			);
+			path = Popups;
+			sourceTree = "<group>";
+		};
 		863022FE26AAB172006323A8 /* Matches */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +132,7 @@
 				863022FE26AAB172006323A8 /* Matches */,
 				8691A3A326A71057003B1F73 /* Profile */,
 				8691A3A926A719DA003B1F73 /* HelperViews */,
+				860306DB26AEA9E500F4FB0B /* Popups */,
 				86F2217226A8223100EB7A66 /* Model */,
 				8691A38E26A6C171003B1F73 /* Assets.xcassets */,
 				8691A39326A6C171003B1F73 /* Info.plist */,
@@ -260,6 +271,7 @@
 				8691A39C26A6CBEE003B1F73 /* TabBarButtonView.swift in Sources */,
 				8630230026AAC5DF006323A8 /* PersonSquare.swift in Sources */,
 				8691A3A526A7169E003B1F73 /* RoundedImage.swift in Sources */,
+				860306DA26AEA9CB00F4FB0B /* PurchasePopup.swift in Sources */,
 				86F2217F26A85EBD00EB7A66 /* ChatViewHeader.swift in Sources */,
 				8630230426AB046F006323A8 /* MatchesView.swift in Sources */,
 				861A519826A9AB9600B4C6C5 /* MessageRowView.swift in Sources */,
