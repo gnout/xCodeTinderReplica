@@ -48,13 +48,17 @@ struct MainView: View {
                         Spacer()
                     }
                     .frame(height: 100)
+                    .padding(.top, 30)
                     
                     correctViewForState()
                     
                     Spacer()
                 }
-                .padding(.top, 30)
                 .edgesIgnoringSafeArea(.vertical)
+                
+                if appState.showPurchasePopup {
+                    PurchasePopup(isVisible: $appState.showPurchasePopup)
+                }
             }
             .modifier(HideNavigationView())
         }

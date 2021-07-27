@@ -10,7 +10,14 @@ import SwiftUI
 struct PurchasePopup: View {
     @Binding var isVisible: Bool
     
+    @State private var selectedIndex: Int = 1
+    
     let screen = UIScreen.main.bounds
+    let subscriptions: [Subscription] = [
+        Subscription.example1,
+        Subscription.example2,
+        Subscription.example3
+    ]
     
     var body: some View {
         GeometryReader { geo in
@@ -23,11 +30,20 @@ struct PurchasePopup: View {
                         .foregroundColor(.yellow)
                         .font(.system(size: 24, weight: .bold))
                     
-                    Text("Part 2. Purchase Swipe Promo 1")
+                    PurchaseSwipePromo()
                         .frame(height: geo.size.height / 3)
-                        .background(Color.gray)
+                        .padding(.top, -35)
                     
-                    Text("Part 3. Purchase Options")
+                    HStack {
+                        ForEach(subscriptions.indices) { subIndex in
+                            let sub = subscriptions[subIndex]
+                            
+                            PurchaseOptionView(sub: sub, isSelected: subIndex == selectedIndex)
+                                .onTapGesture(perform: {
+                                    selectedIndex = subIndex
+                                })
+                        }
+                    }
                     
                     Spacer()
                     
@@ -80,7 +96,8 @@ struct PurchasePopup: View {
     }
     
     func processPayment() {
-        //
+        //let product = subscriptions[selectedIndex]
+        // network request to buy the selected subscription
     }
 }
 

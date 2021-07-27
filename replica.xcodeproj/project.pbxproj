@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		860306DA26AEA9CB00F4FB0B /* PurchasePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860306D926AEA9CB00F4FB0B /* PurchasePopup.swift */; };
+		860306DD26AEC5D000F4FB0B /* PurchaseSwipePromo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860306DC26AEC5D000F4FB0B /* PurchaseSwipePromo.swift */; };
+		860306E026AECA5200F4FB0B /* PurchaseOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860306DF26AECA5200F4FB0B /* PurchaseOptionView.swift */; };
+		860306E226AEED8400F4FB0B /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860306E126AEED8400F4FB0B /* Subscription.swift */; };
+		860306E426B0140100F4FB0B /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860306E326B0140100F4FB0B /* RoundedCorner.swift */; };
 		861A519426A987E000B4C6C5 /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861A519326A987E000B4C6C5 /* MessageListView.swift */; };
 		861A519626A98A9200B4C6C5 /* MessageListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861A519526A98A9100B4C6C5 /* MessageListVM.swift */; };
 		861A519826A9AB9600B4C6C5 /* MessageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861A519726A9AB9600B4C6C5 /* MessageRowView.swift */; };
@@ -40,6 +44,10 @@
 
 /* Begin PBXFileReference section */
 		860306D926AEA9CB00F4FB0B /* PurchasePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasePopup.swift; sourceTree = "<group>"; };
+		860306DC26AEC5D000F4FB0B /* PurchaseSwipePromo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseSwipePromo.swift; sourceTree = "<group>"; };
+		860306DF26AECA5200F4FB0B /* PurchaseOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseOptionView.swift; sourceTree = "<group>"; };
+		860306E126AEED8400F4FB0B /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
+		860306E326B0140100F4FB0B /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		861A519326A987E000B4C6C5 /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListView.swift; sourceTree = "<group>"; };
 		861A519526A98A9100B4C6C5 /* MessageListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListVM.swift; sourceTree = "<group>"; };
 		861A519726A9AB9600B4C6C5 /* MessageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRowView.swift; sourceTree = "<group>"; };
@@ -86,9 +94,28 @@
 		860306DB26AEA9E500F4FB0B /* Popups */ = {
 			isa = PBXGroup;
 			children = (
-				860306D926AEA9CB00F4FB0B /* PurchasePopup.swift */,
+				860306DE26AEC5E900F4FB0B /* Purchase */,
 			);
 			path = Popups;
+			sourceTree = "<group>";
+		};
+		860306DE26AEC5E900F4FB0B /* Purchase */ = {
+			isa = PBXGroup;
+			children = (
+				860306D926AEA9CB00F4FB0B /* PurchasePopup.swift */,
+				860306DC26AEC5D000F4FB0B /* PurchaseSwipePromo.swift */,
+				860306DF26AECA5200F4FB0B /* PurchaseOptionView.swift */,
+			);
+			path = Purchase;
+			sourceTree = "<group>";
+		};
+		860306E526B0141100F4FB0B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8691A39F26A6EAEC003B1F73 /* Extensions.swift */,
+				860306E326B0140100F4FB0B /* RoundedCorner.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		863022FE26AAB172006323A8 /* Matches */ = {
@@ -127,7 +154,7 @@
 				8691A39D26A6E74C003B1F73 /* AppStateManager.swift */,
 				863022F826AAAC70006323A8 /* UserManager.swift */,
 				8691A39B26A6CBEE003B1F73 /* TabBarButtonView.swift */,
-				8691A39F26A6EAEC003B1F73 /* Extensions.swift */,
+				860306E526B0141100F4FB0B /* Extensions */,
 				86F2217926A84DF200EB7A66 /* Messages */,
 				863022FE26AAB172006323A8 /* Matches */,
 				8691A3A326A71057003B1F73 /* Profile */,
@@ -173,6 +200,7 @@
 				86F2217326A84B4C00EB7A66 /* Person.swift */,
 				86F2217526A84C7000EB7A66 /* MessagePreview.swift */,
 				863022FA26AAAD71006323A8 /* User.swift */,
+				860306E126AEED8400F4FB0B /* Subscription.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -278,13 +306,17 @@
 				8691A3A026A6EAEC003B1F73 /* Extensions.swift in Sources */,
 				861A519626A98A9200B4C6C5 /* MessageListVM.swift in Sources */,
 				8691A38D26A6C16D003B1F73 /* ContentView.swift in Sources */,
+				860306E426B0140100F4FB0B /* RoundedCorner.swift in Sources */,
+				860306E226AEED8400F4FB0B /* Subscription.swift in Sources */,
 				86F2217B26A8537300EB7A66 /* ChatView.swift in Sources */,
 				86F2217426A84B4C00EB7A66 /* Person.swift in Sources */,
 				86F2217826A84DE400EB7A66 /* MessageView.swift in Sources */,
 				86F2216F26A80CD200EB7A66 /* ProfileSwipePromo.swift in Sources */,
 				8691A39A26A6C7AA003B1F73 /* MainView.swift in Sources */,
 				8691A38B26A6C16D003B1F73 /* replicaApp.swift in Sources */,
+				860306E026AECA5200F4FB0B /* PurchaseOptionView.swift in Sources */,
 				86F2217126A8221600EB7A66 /* Message.swift in Sources */,
+				860306DD26AEC5D000F4FB0B /* PurchaseSwipePromo.swift in Sources */,
 				8691A3A226A7100B003B1F73 /* ProfileView.swift in Sources */,
 				863022FD26AAB15E006323A8 /* LikesView.swift in Sources */,
 				8691A39E26A6E74C003B1F73 /* AppStateManager.swift in Sources */,
