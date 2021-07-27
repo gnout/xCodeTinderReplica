@@ -17,7 +17,13 @@ struct Person: Hashable, Identifiable {
 
 extension Person {
     static let example = Person(name: "Alex",
-                                imageURLS: [URL(string: "https://picsum.photos/400/300")!],
+                                imageURLS: [
+                                    URL(string: "https://picsum.photos/400/300")!,
+                                    URL(string: "https://picsum.photos/400/305")!,
+                                    URL(string: "https://picsum.photos/400/306")!,
+                                    URL(string: "https://picsum.photos/400/307")!,
+                                    URL(string: "https://picsum.photos/400/308")!
+                                ],
                                 bio: "This is my bio",
                                 age: 34)
     
