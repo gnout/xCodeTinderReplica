@@ -13,6 +13,11 @@
 		860306E226AEED8400F4FB0B /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860306E126AEED8400F4FB0B /* Subscription.swift */; };
 		860306E426B0140100F4FB0B /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860306E326B0140100F4FB0B /* RoundedCorner.swift */; };
 		860306E726B02EFF00F4FB0B /* CardImageScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860306E626B02EFE00F4FB0B /* CardImageScroller.swift */; };
+		860306EB26B0555C00F4FB0B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860306EA26B0555C00F4FB0B /* CardView.swift */; };
+		860306ED26B7E67700F4FB0B /* FullScreenCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860306EC26B7E67700F4FB0B /* FullScreenCardView.swift */; };
+		860306EF26B7F90F00F4FB0B /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860306EE26B7F90F00F4FB0B /* CircleButtonView.swift */; };
+		860306F126B81F8600F4FB0B /* CardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860306F026B81F8600F4FB0B /* CardStack.swift */; };
+		860306F326B8223C00F4FB0B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860306F226B8223C00F4FB0B /* HomeView.swift */; };
 		861A519426A987E000B4C6C5 /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861A519326A987E000B4C6C5 /* MessageListView.swift */; };
 		861A519626A98A9200B4C6C5 /* MessageListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861A519526A98A9100B4C6C5 /* MessageListVM.swift */; };
 		861A519826A9AB9600B4C6C5 /* MessageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861A519726A9AB9600B4C6C5 /* MessageRowView.swift */; };
@@ -50,6 +55,11 @@
 		860306E126AEED8400F4FB0B /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
 		860306E326B0140100F4FB0B /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		860306E626B02EFE00F4FB0B /* CardImageScroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageScroller.swift; sourceTree = "<group>"; };
+		860306EA26B0555C00F4FB0B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		860306EC26B7E67700F4FB0B /* FullScreenCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenCardView.swift; sourceTree = "<group>"; };
+		860306EE26B7F90F00F4FB0B /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
+		860306F026B81F8600F4FB0B /* CardStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStack.swift; sourceTree = "<group>"; };
+		860306F226B8223C00F4FB0B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		861A519326A987E000B4C6C5 /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListView.swift; sourceTree = "<group>"; };
 		861A519526A98A9100B4C6C5 /* MessageListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListVM.swift; sourceTree = "<group>"; };
 		861A519726A9AB9600B4C6C5 /* MessageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRowView.swift; sourceTree = "<group>"; };
@@ -124,6 +134,9 @@
 			isa = PBXGroup;
 			children = (
 				860306E626B02EFE00F4FB0B /* CardImageScroller.swift */,
+				860306EA26B0555C00F4FB0B /* CardView.swift */,
+				860306EC26B7E67700F4FB0B /* FullScreenCardView.swift */,
+				860306F026B81F8600F4FB0B /* CardStack.swift */,
 			);
 			path = CardViews;
 			sourceTree = "<group>";
@@ -132,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				860306E826B02F0D00F4FB0B /* CardViews */,
+				860306F226B8223C00F4FB0B /* HomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -208,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				8691A3A426A7169E003B1F73 /* RoundedImage.swift */,
+				860306EE26B7F90F00F4FB0B /* CircleButtonView.swift */,
 			);
 			path = HelperViews;
 			sourceTree = "<group>";
@@ -313,13 +328,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				860306ED26B7E67700F4FB0B /* FullScreenCardView.swift in Sources */,
 				86F2217D26A853FB00EB7A66 /* ChatManager.swift in Sources */,
 				861A519426A987E000B4C6C5 /* MessageListView.swift in Sources */,
 				8691A39C26A6CBEE003B1F73 /* TabBarButtonView.swift in Sources */,
+				860306EF26B7F90F00F4FB0B /* CircleButtonView.swift in Sources */,
 				8630230026AAC5DF006323A8 /* PersonSquare.swift in Sources */,
 				8691A3A526A7169E003B1F73 /* RoundedImage.swift in Sources */,
 				860306DA26AEA9CB00F4FB0B /* PurchasePopup.swift in Sources */,
 				86F2217F26A85EBD00EB7A66 /* ChatViewHeader.swift in Sources */,
+				860306F326B8223C00F4FB0B /* HomeView.swift in Sources */,
 				8630230426AB046F006323A8 /* MatchesView.swift in Sources */,
 				861A519826A9AB9600B4C6C5 /* MessageRowView.swift in Sources */,
 				8691A3A026A6EAEC003B1F73 /* Extensions.swift in Sources */,
@@ -343,7 +361,9 @@
 				863022F926AAAC70006323A8 /* UserManager.swift in Sources */,
 				8630230226AB00E0006323A8 /* TopPicksView.swift in Sources */,
 				86F2217626A84C7000EB7A66 /* MessagePreview.swift in Sources */,
+				860306EB26B0555C00F4FB0B /* CardView.swift in Sources */,
 				863022FB26AAAD71006323A8 /* User.swift in Sources */,
+				860306F126B81F8600F4FB0B /* CardStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
